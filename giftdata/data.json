@@ -7,7 +7,8 @@
         "purchaseLink": "chibird.com/plush",
         "artistLink": "chibird.com",
         "price": 40,
-        "tags": ["cute", "plush"]
+        "tags": ["cute", "plush"],
+        "description": "A round pengy with motivational cards right in the back!"
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "purchaseLink": "chibird.com/plush",
         "artistLink": "chibird.com",
         "price": 19.99,
-        "tags": ["cute", "blop"]
+        "tags": ["cute", "blop"],
+        "description": "Gloopity, blopity, bloopity, blop. Bloop Doop. Slooooooooooooping gooping and flawoooping!"
     },
     {
         "id": 3,
@@ -27,6 +29,7 @@
         "purchaseLink": "chibird.com/plush",
         "artistLink": "chibird.com",
         "price": 5,
-        "tags": ["cute", "deadly"]
+        "tags": ["cute", "deadly"],
+        "description": "Occasinally, you just need to do some stabbin'"
     }
 ]

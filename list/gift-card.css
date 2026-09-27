@@ -35,6 +35,10 @@ gift-card + gift-card {
     font-size: 1.15rem;
 }
 
+.gift-card-description {
+    margin: 0.35rem 0 0;
+}
+
 .gift-card-tags {
     margin-top: 0.5rem;
 }

@@ -30,6 +30,7 @@ class GiftCard extends HTMLElement {
         artistLink.href = withUrlScheme(gift.artistLink);
 
         content.querySelector('[data-gift-price]').textContent = `$ ${priceFormatter.format(gift.price)}`;
+        content.querySelector('[data-gift-description]').textContent = gift.description;
 
         const tagList = content.querySelector('[data-gift-tags]');
         for (const name of gift.tags) {
