@@ -38,4 +38,14 @@ export class GiftApi {
         throw new Error('Gift not found!');
     }
 
+    getGiftsByTags(tags) {
+        const requestedTags = new Set(tags);
+        if (requestedTags.size === 0) {
+            return [];
+        }
+        return this.giftData.filter(gift =>
+            [...requestedTags].every(tag => gift.tags.includes(tag))
+        );
+    }
+
 }

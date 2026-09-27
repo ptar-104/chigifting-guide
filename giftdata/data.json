@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Motivational Penguin Plush",
+        "imageLink": "https://chibird.myshopify.com/cdn/shop/files/penguin_thumb_title_1024x1024.png",
         "artist": "Chibird",
         "purchaseLink": "chibird.com/plush",
         "artistLink": "chibird.com",
@@ -11,10 +12,21 @@
     {
         "id": 2,
         "name": "Bloop Doop",
+        "imageLink": "https://cdn.apartmenttherapy.info/image/upload/v1767365189/tk/photo/2025/12-2025/2025-12-how-to-make-slime/cropped/slime-kitchn-crop_48.jpg",
         "artist": "Chibird",
         "purchaseLink": "chibird.com/plush",
         "artistLink": "chibird.com",
         "price": 19.99,
         "tags": ["cute", "blop"]
+    },
+    {
+        "id": 3,
+        "name": "A knife",
+        "imageLink": "https://assets.katogroup.eu/i/katogroup/ZW31021-200_01_zwilling?%24product-image%24=&fmt=auto&h=434&w=652",
+        "artist": "Knifebird",
+        "purchaseLink": "chibird.com/plush",
+        "artistLink": "chibird.com",
+        "price": 5,
+        "tags": ["cute", "deadly"]
     }
 ]

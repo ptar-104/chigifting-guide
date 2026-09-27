@@ -1,0 +1,36 @@
+gift-card + gift-card {
+    border-top: 1px solid #e2e2e2;
+}
+
+.gift-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-block: 0.75rem;
+}
+
+.gift-card-image {
+    flex: 0 0 20%;
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.gift-card-details {
+    min-width: 0;
+}
+
+.gift-card-name {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.gift-card-artist {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+}
+
+.gift-card-price {
+    margin: 0.35rem 0 0;
+    font-size: 1.15rem;
+}
