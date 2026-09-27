@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Motivational Penguin Plush",
+        "artist": "Chibird",
+        "purchaseLink": "chibird.com/plush",
+        "artistLink": "chibird.com",
+        "price": 40,
+        "tags": ["cute", "plush"]
+    },
+    {
+        "id": 2,
+        "name": "Bloop Doop",
+        "artist": "Chibird",
+        "purchaseLink": "chibird.com/plush",
+        "artistLink": "chibird.com",
+        "price": 19.99,
+        "tags": ["cute", "blop"]
+    }
+]
