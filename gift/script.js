@@ -17,7 +17,7 @@ if (giftId == null) {
 
 let giftApi;
 try {
-    giftApi = await GiftApi.create();
+    giftApi = await GiftApi.get();
 } catch (error) {
     outputString = "Error creating giftApi";
     console.log(outputString + ": " + error.message);

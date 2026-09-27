@@ -1,5 +1,6 @@
 import { GiftApi } from '../giftdata/gift-api.js';
 import './gift-card.js';
+import '../tags/tag.js';
 
 const urlParams = new URLSearchParams(window.location.search);
 const tags = urlParams.getAll('tags')
@@ -7,8 +8,15 @@ const tags = urlParams.getAll('tags')
     .map(tag => tag.trim())
     .filter(Boolean);
 
+const tagBubbles = document.getElementById('tag-bubbles');
+for (const name of tags) {
+    const tagBubble = document.createElement('gift-tag');
+    tagBubble.tag = name;
+    tagBubbles.append(tagBubble);
+}
+
 try {
-    const giftApi = await GiftApi.create();
+    const giftApi = await GiftApi.get();
     const gifts = giftApi.getGiftsByTags(tags);
     const giftsContainer = document.getElementById('gifts');
 

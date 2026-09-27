@@ -1,14 +1,29 @@
 // Contains all the various means of getting/listing gifts by id or tags
+let giftApiInstance;
+let giftApiCreation;
+
 export class GiftApi {
 
-    // Recommended to use the create function
+    // Recommended to use the get function
     constructor(giftData) {
         this.giftData = giftData;
     }
 
-    static async create() {
-        const giftData = await GiftApi.parseGiftJson();
-        return new GiftApi(giftData);
+    static get() {
+        if (giftApiInstance) {
+            return Promise.resolve(giftApiInstance);
+        }
+        if (!giftApiCreation) {
+            giftApiCreation = GiftApi.parseGiftJson()
+                .then(giftData => {
+                    giftApiInstance = new GiftApi(giftData);
+                    return giftApiInstance;
+                })
+                .finally(() => {
+                    giftApiCreation = undefined;
+                });
+        }
+        return giftApiCreation;
     }
 
     // Parses the json into a local file. I... likely want to do this

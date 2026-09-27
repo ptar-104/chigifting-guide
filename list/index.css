@@ -1,0 +1,17 @@
+.tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-end: 0.5rem;
+}
+
+.tag-filter p {
+    margin: 0;
+}
+
+.tag-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}

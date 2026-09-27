@@ -1,3 +1,5 @@
+import '../tags/tag.js';
+
 const templateResponse = await fetch(new URL('./gift-card.html', import.meta.url));
 if (!templateResponse.ok) {
     throw new Error(`Network response was not ok: ${templateResponse.status}`);
@@ -28,6 +30,13 @@ class GiftCard extends HTMLElement {
         artistLink.href = withUrlScheme(gift.artistLink);
 
         content.querySelector('[data-gift-price]').textContent = `$ ${priceFormatter.format(gift.price)}`;
+
+        const tagList = content.querySelector('[data-gift-tags]');
+        for (const name of gift.tags) {
+            const tagBubble = document.createElement('gift-tag');
+            tagBubble.tag = name;
+            tagList.append(tagBubble);
+        }
 
         this.classList.add('gift-card');
         this.setAttribute('role', 'article');

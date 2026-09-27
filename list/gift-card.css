@@ -34,3 +34,18 @@ gift-card + gift-card {
     margin: 0.35rem 0 0;
     font-size: 1.15rem;
 }
+
+.gift-card-tags {
+    margin-top: 0.5rem;
+}
+
+.gift-card-tags-label {
+    margin: 0 0 0.25rem;
+    font-size: 0.85rem;
+}
+
+.gift-card-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
