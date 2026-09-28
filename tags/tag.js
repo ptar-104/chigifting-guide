@@ -18,7 +18,7 @@ class GiftTag extends HTMLElement {
 		const content = tagTemplate.content.cloneNode(true);
 		const bubble = content.querySelector('[data-tag-name]');
 		bubble.textContent = name;
-		const listUrl = new URL('/list/', window.location.origin);
+		const listUrl = new URL('/list/index.html', window.location.origin);
 		listUrl.searchParams.set('tags', name);
 		bubble.href = listUrl;
 		this.replaceChildren(content);
